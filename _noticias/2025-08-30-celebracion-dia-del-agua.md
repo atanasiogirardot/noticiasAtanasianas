@@ -7,7 +7,7 @@ author: "Comunicaciones"
 galeria:
   - "https://i.imgur.com/O95XsbX.png"
   - "https://docentes.algareditorial.com/img/posts/150/previo.jpg"
-  - "https://drive.google.com/file/d/18ihx58OcF68XyIuqDxzPJwfHdVpITSMR/view?usp=sharing"
+  - "https://drive.google.com/file/d/18ihx58OcF68XyIuqDxzPJwfHdVpITSMR/view"
   - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
   - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
   - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
