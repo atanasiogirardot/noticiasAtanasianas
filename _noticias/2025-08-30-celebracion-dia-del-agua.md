@@ -6,7 +6,7 @@ category: "Eventos"
 author: "Comunicaciones"
 galeria:
   - "https://i.imgur.com/O95XsbX.png"
-  - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
+  - "https://docentes.algareditorial.com/img/posts/150/previo.jpg"
   - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
   - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
   - "https://jusata.github.io/notiatanasiano//assets/images/noticias/maestros.jpg"
