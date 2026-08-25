@@ -84,21 +84,23 @@
       media = `<div class="gallery-grid">${imgs}</div>`;
     }
 
-    const link = item.url
-      ? `<a class="read-more-link" href="${item.url}">Leer noticia completa →</a>`
-      : '';
+    // Para noticias, item.text ya viene con formato HTML (párrafos, listas, etc.)
+    // desde noticia.content en Jekyll. Para video/galería es texto plano.
+    const bodyHtml =
+      item.type === 'noticia'
+        ? `<div class="article-text drop-cap">${item.text}</div>`
+        : `<p class="article-text">${escapeHtml(item.text)}</p>`;
 
     return `
       <div class="page-header">
-        <div class="masthead">Notiatanasiano</div>
+        <div class="masthead">El Bárbula</div>
         <div class="page-sub"><span>Edición Digital</span><span>${item.date || ''}</span></div>
       </div>
       <span class="category-tag ${catClass(item.type)}">${escapeHtml(item.cat)}</span>
       <h2 class="headline">${escapeHtml(item.title)}</h2>
       <div class="byline">${escapeHtml(item.author)}</div>
       ${media}
-      <p class="article-text ${item.type === 'noticia' ? 'drop-cap' : ''}">${escapeHtml(item.text)}</p>
-      ${link}
+      ${bodyHtml}
       <div class="page-num ${side}">${pageNum}</div>
     `;
   }
