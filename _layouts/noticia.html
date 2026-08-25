@@ -39,8 +39,7 @@ description: "Periódico digital interactivo - Noticias, videos y fotos"
       "author": {{ noticia.author | default: "Redacción" | jsonify }},
       "date": {{ noticia.date | date: "%d %b %Y" | jsonify }},
       "sortdate": {{ noticia.date | date: "%s" }},
-      "text": {{ noticia.excerpt | strip_html | jsonify }},
-      "url": {{ noticia.url | relative_url | jsonify }}
+      "text": {{ noticia.content | jsonify }}
     }
     {% endcapture %}
     {% assign items = items | push: entry %}
